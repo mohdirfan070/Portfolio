@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
+}
+
+.right-nav-mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(29, 24, 24);
+  padding-top: 3rem;
+  position: absolute;
+  left: 0rem;
+  animation: scrolfromleft 0.3s ease 1;
+  z-index: 10;
+}
+
+.innerMenuDiv {
+  color: aliceblue;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  line-height: 4.1rem;
+}
+
+.mobile-nav-li {
+  width: 100%;
+}
+
+.mobile-nav-links {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+@keyframes scrolfromleft {
+  from {
+    left: -19rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+
+.nav-links-desktop {
+  display: flex;
+  position: absolute;
+  right: 1.7rem;
+  top: 1.4rem;
+}
+
+.nav-links-desktop li {
+  margin: 1rem;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Hambruger */
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 90ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.hero {
+  background-color: white;
+  position: relative;
+  top: 0rem;
+  padding-top: 4rem;
+  height: 100vh;
+  box-shadow: inset 0 0 6px rgb(195, 189, 189);
+}
+
+.right-hero {
+  width: 50%;
+}
+
+.left-hero {
+  width: 50%;
+  padding: 2rem;
+}
+
+/* 
+  .heroText{
+    user-select: none;
+    position: absolute;
+    top: 52%;
+    left: 14%;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black; 
+  } */
+
+.hero img {
+  max-width: 600px;
+  aspect-ratio: 6/4;
+  object-fit: contain;
+}
+
+.text-bg:not(p) {
+  height: max-content;
+  background: linear-gradient(to right, rgb(156, 100, 197), rgb(89, 4, 150));
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+.text-bg p {
+  color: black;
+  font-size: 1.6rem;
+}
+
+/* main */
+main {
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  background-color: #9d64c5e0;
+ 
+}
+.about-texts {
+  padding: 1rem;
+  color: white;
+  & h4 {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+  & p{
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Querries */
+
+/* Burger Transition */
+
+@media (max-width: 800px) {
+  .right-nav-desktop {
+    display: none;
+  }
+
+  .hamburger-div {
+    display: inline-block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+  }
+  .hero {
+    flex-direction: column;
+    padding-top: 1.7rem;
+    padding-bottom: 4rem;
+    height: 100vh;
+  }
+  .right-hero,
+  .left-hero {
+    width: 100%;
+    text-wrap: wrap;
+  }
+  .left-hero {
+    margin: 0;
+  }
+  .right-hero {
+    margin-top: 3rem;
+  }
+}

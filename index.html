@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html translate="no" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Irfan</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+      href="style.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="p-2 shadow-lg relative">
+      <div class="left-nav inline-block">
+        <img
+          class="w-20 rounded-full shadow-xl"
+          src="assests/myinstaprofile.jpg"
+          alt=""
+        />
+      </div>
+      <!-- DeskTop Div -->
+      <div class="right-nav-desktop">
+
+        <ul class="nav-links-desktop">
+          <li><a href="#about">About</a></li>
+          <li><a href="/">Developer</a></li>
+          <li>
+            <a href="/"><i class="fa fa-th"></i>Work</a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-usd"></i> Pricing</a>
+          </li>
+          <li>
+            <a href="/"><i class="fa fa-envelope"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Div -->
+      <div class="hamburger-div hidden">
+        <label class="hamburger">
+          <input id="BurgerMenu" type="checkbox" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+      </div>
+      <div id="BurgerMenuList" class="right-nav-mobile hidden">
+        <div class="innerMenuDiv">
+          <ul class="nav-links-mobile">
+            <li onclick="hideBurgerMenu()" class="mobile-nav-li">
+              <a class="mobile-nav-links" href="#about">About</a>
+            </li>
+            <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
+              <a class="mobile-nav-links" href="/">Developer</a>
+            </li>
+            <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
+              <a class="mobile-nav-links" href="/">Work</a>
+            </li>
+            <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
+              <a class="mobile-nav-links" href="/">Price</a>
+            </li>
+            <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
+              <a class="mobile-nav-links" href="/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header id="#home" class="w-full">
+      <section class="hero w-full flex  h-auto">
+        <div class="right-hero ">
+          <img
+          class="w-[90%] m-12"
+            src="/assests/heroImage.png"
+            alt=""
+          />
+        </div>
+        <div class="left-hero ">
+            <div class="text-bg mt-4 >
+                <h1 translate="no" class=" hover:cursor-pointer" heroText ">Mohammed Irfan</h1>
+                <p class="">Full Stack Developer</p>
+            </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="about">
+        <section class="about" >
+            <div class="about-texts text-center">
+                <h4 class="">About the Company</h4>
+                <p>Key features of our company</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
