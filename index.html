@@ -20,10 +20,11 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <nav id="home" class="p-2 shadow-lg relative">
+  <body  id="home">
+    <div  class="topDiv fixed top-0 z-20 w-full " >  
+    <nav  class="p-2 shadow-lg relative">
       <div class="left-nav inline-block">
-       <a href="#home"> <img
+       <a  href="#home"> <img
           class="w-20 rounded-full shadow-xl"
           src="assests/myinstaprofile.jpg"
           alt=""
@@ -38,11 +39,11 @@
           <li>
             <a href="#works"><i class="fa fa-th"></i>Work</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="/"><i class="fa fa-usd"></i> Pricing</a>
-          </li>
+          </li> -->
           <li>
-            <a href="/"><i class="fa fa-envelope"></i>Contact</a>
+            <a href="#contact"><i class="fa fa-envelope"></i>Contact</a>
           </li>
         </ul>
       </div>
@@ -72,16 +73,18 @@
             <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
               <a class="mobile-nav-links" href="#works">Work</a>
             </li>
-            <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
+            <!-- <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
               <a class="mobile-nav-links" href="/">Price</a>
-            </li>
+            </li> -->
             <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
-              <a class="mobile-nav-links" href="/">Contact</a>
+              <a class="mobile-nav-links" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </div>
+
     <header id="#home" class="w-full">
       <section class="hero w-full flex  h-auto">
         <div class="right-hero ">
@@ -92,8 +95,8 @@
           />
         </div>
         <div class="left-hero ">
-            <div class="text-bg mt-4 >
-                <h1 translate="no" class=" hover:cursor-pointer" heroText ">Mohammed Irfan</h1>
+            <div class="text-bg >
+                <h1 translate="no" class=" hover:cursor-pointer" heroText ">{Mohammed Irfan}</h1>
                 <p class="">Full Stack Developer</p>
             </div>
         </div>
@@ -101,7 +104,7 @@
     </header>
 
     <main id="about">
-        <section class="about" >
+        <section class="about " >
             <div class="about-texts text-center">
                 <h4 class="">About the Company</h4>
                 <p>Key features of our company</p>
@@ -116,7 +119,7 @@
               <div class="card flex flex-col w-36  text-wrap  ">
                 <img class="card-img  " src="https://th.bing.com/th/id/OIP.EU2GDlF6eCMevDU97NWR-wAAAA?rs=1&pid=ImgDetMain" alt="">
                  <h2 class="font-bold text-2xl">Passion</h2>
-                 <p>responsive website development crafts user-friendly, adaptable sites that seamlessly adjust across devices, enhancing online presence and user experience</p>
+                 <p>Web development ignites my creativity! Crafting elegant interfaces, solving puzzles in code, and building digital experiences—each line </p>
                </div>
 
                <div class="card flex flex-col w-36  text-wrap  ">
@@ -128,13 +131,16 @@
                <div class="card flex flex-col w-36  text-wrap   ">
                <img class="card-img " src="./assests/supportImg.png" alt="">
                 <h2 class="font-bold text-2xl">Support</h2>
-                <p>esponsive website development crafts user-friendly, adaptable sites that seamlessly adjust across devices, enhancing online presence and user experience</p>
+                <p>We are one step away from helping you with our 24x7 helpline service</p>
               </div>
 
             </div>
         </section>
     </main>
-    <section id="works" class="projects w-full">
+    <section class="pricing"></section>
+
+
+    <section id="works" class="projects w-full mt-32">
       <div class="projects-inner w-max justify-center flex flex-row flex-wrap h-max align-middle p-4 text-center gap-y-24">
         <div  class=" m-auto   ">
           <span class="font-bold mx-auto text-2xl ">2+   <br>Partners</span>
@@ -142,16 +148,43 @@
          <div class="m-auto ">
           <span class="font-bold text-2xl ">55+ <br>Projects Done</span>
          </div> <div class="m-auto   ">
-          <span class="font-bold text-2xl ">14+   <br>Happy Clients</span>
+          <span class="font-bold text-2xl ">25+   <br>Happy Clients</span>
          </div> <div class="m-auto    ">
           <span class="font-bold text-2xl ">100+  <br>Meetings</span>
          </div>
       </div>
+      <section  class="w-full text-center p-6 ">
+        <h1 class="font-bold text-xl">Our Works</h1>      
+        <p >What we've done for people</p>
+        <div class="work-links">
+          <a  class="text-xl mt-10 font-semibold underline" href="https://cakeworld.vercel.app" target="_blank">Cakeworld</a>
+        </div>
+    </section>
     </section>
     
-    <section>
+    
+      <section id="contact" class="w-full">
+        <h1 class="font-bold text-2xl">CONTACT</h1>
+        <div class="contact-details m-4" >
+          <a target="_blank" href="mailto:mohammedirfanrj@gmail.com"><p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> mohammedirfanrj@gmail.com</p></a>
 
-    </section>
+          <a target="_blank" href="https://wa.me/9538321498?text=Hello%20I%20want%20build%20website%20for%20me"><p><i class="fa fa-whatsapp "></i> Whatsapp Us</p></a>
+
+          <a href=""tel:9538321498"> <p><i class="fa fa-phone fa-fw "></i> Phone: +91 9538321498</p></a>
+
+          <a target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=17.35557,76.86297"> <p><i class="fa fa-map-marker fa-fw"></i>Karnataka, India</p></a>
+
+          <a target="_blank" href="https://instagram.com/mohd_irfan070/"> <p>  <i class="fa fa-instagram w3-hover-opacity"></i> Follow me on Instagram</p></a>
+
+          <a target="_blank" href="https://www.snapchat.com/add/mohd_irfan070"> <p><i class="fa fa-snapchat w3-hover-opacity"></i>Snapchat</p></a>
+
+
+          <p><i class="fa fa-copyright"></i> Code licensed under MIT License. Created by Mohammed Irfan</p>
+          
+          
+        </div>
+      </section>
+    
 
 
     <script src="./app.js"></script>
