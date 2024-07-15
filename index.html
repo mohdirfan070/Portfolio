@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Irfan</title>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+     <link rel="shortcut icon"  href="./assests/myinstaprofile.jpg" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -20,13 +21,13 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="p-2 shadow-lg relative">
+    <nav id="home" class="p-2 shadow-lg relative">
       <div class="left-nav inline-block">
-        <img
+       <a href="#home"> <img
           class="w-20 rounded-full shadow-xl"
           src="assests/myinstaprofile.jpg"
           alt=""
-        />
+        /></a>
       </div>
       <!-- DeskTop Div -->
       <div class="right-nav-desktop">
@@ -35,7 +36,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="/">Developer</a></li>
           <li>
-            <a href="/"><i class="fa fa-th"></i>Work</a>
+            <a href="#works"><i class="fa fa-th"></i>Work</a>
           </li>
           <li>
             <a href="/"><i class="fa fa-usd"></i> Pricing</a>
@@ -69,7 +70,7 @@
               <a class="mobile-nav-links" href="/">Developer</a>
             </li>
             <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
-              <a class="mobile-nav-links" href="/">Work</a>
+              <a class="mobile-nav-links" href="#works">Work</a>
             </li>
             <li  onclick="hideBurgerMenu()" class="mobile-nav-li">
               <a class="mobile-nav-links" href="/">Price</a>
@@ -86,7 +87,7 @@
         <div class="right-hero ">
           <img
           class="w-[90%] m-12"
-            src="/assests/heroImage.png"
+            src="./assests/heroImage.png"
             alt=""
           />
         </div>
@@ -105,9 +106,52 @@
                 <h4 class="">About the Company</h4>
                 <p>Key features of our company</p>
             </div>
-        </section>
+            <div class="cards flex justify-center align-middle flex-wrap">
+              <div class="card flex flex-col w-36  text-wrap   ">
+               <img  class="card-img  " src="./assests/responsiveImg.png" alt="">
+                <h2 class="font-bold text-2xl">Responsive</h2>
+                <p>Responsive website development crafts user-friendly, adaptable sites that seamlessly adjust across devices, enhancing online presence and user experience</p>
+              </div>
 
+              <div class="card flex flex-col w-36  text-wrap  ">
+                <img class="card-img  " src="https://th.bing.com/th/id/OIP.EU2GDlF6eCMevDU97NWR-wAAAA?rs=1&pid=ImgDetMain" alt="">
+                 <h2 class="font-bold text-2xl">Passion</h2>
+                 <p>responsive website development crafts user-friendly, adaptable sites that seamlessly adjust across devices, enhancing online presence and user experience</p>
+               </div>
+
+               <div class="card flex flex-col w-36  text-wrap  ">
+                <img class="card-img " src="./assests/designImg.png" alt="">
+                 <h2 class="font-bold text-2xl">Design</h2>
+                 <p>Excellent web design is visually stunning, user-friendly, and aligned with brand identity</p>
+               </div>
+
+               <div class="card flex flex-col w-36  text-wrap   ">
+               <img class="card-img " src="./assests/supportImg.png" alt="">
+                <h2 class="font-bold text-2xl">Support</h2>
+                <p>esponsive website development crafts user-friendly, adaptable sites that seamlessly adjust across devices, enhancing online presence and user experience</p>
+              </div>
+
+            </div>
+        </section>
     </main>
+    <section id="works" class="projects w-full">
+      <div class="projects-inner w-max justify-center flex flex-row flex-wrap h-max align-middle p-4 text-center gap-y-24">
+        <div  class=" m-auto   ">
+          <span class="font-bold mx-auto text-2xl ">2+   <br>Partners</span>
+         </div>
+         <div class="m-auto ">
+          <span class="font-bold text-2xl ">55+ <br>Projects Done</span>
+         </div> <div class="m-auto   ">
+          <span class="font-bold text-2xl ">14+   <br>Happy Clients</span>
+         </div> <div class="m-auto    ">
+          <span class="font-bold text-2xl ">100+  <br>Meetings</span>
+         </div>
+      </div>
+    </section>
+    
+    <section>
+
+    </section>
 
 
     <script src="./app.js"></script>

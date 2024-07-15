@@ -156,7 +156,7 @@
 main {
   width: 100%;
   position: relative;
-  height: 90vh;
+  height: max-content;
   background-color: #9d64c5e0;
  
 }
@@ -172,6 +172,41 @@ main {
     font-weight: 300;
     font-size: 1.2rem;
   }
+}
+
+.cards{
+  padding: 1rem;
+  
+}
+
+.card{
+  margin: 0.6rem;
+ max-width: 23rem;
+  height: max-content;
+  padding:1.6rem 0.6rem;
+  text-align: center;
+  & h2,p{
+    color: white;
+    margin: 0.3rem;
+  }
+
+
+}
+
+
+
+.card-img{
+  max-width: 14rem;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.projects{
+  height: max-content;
+  width: 100%;
+  color:#9d64c5e0 ;
+  
 }
 
 /* Media Querries */
@@ -206,4 +241,10 @@ main {
   .right-hero {
     margin-top: 3rem;
   }
+  .projects-inner{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  } 
+
 }
